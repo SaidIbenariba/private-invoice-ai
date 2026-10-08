@@ -1,0 +1,31 @@
+{
+  "file": "inv_021.pdf",
+  "route": "text",
+  "seconds": 34.1,
+  "raw": {
+    "supplier_name": "Brightline Logistics LLC",
+    "supplier_tax_id": "39-8286408",
+    "invoice_number": "INV-1153",
+    "invoice_date": "Sep 27, 2026",
+    "due_date": "Nov 11, 2026",
+    "currency": "$",
+    "subtotal": "$919.15",
+    "tax_rate": "Sales Tax (8.25%)",
+    "tax_amount": "$75.83",
+    "total": "$994.98",
+    "line_items": [
+      {
+        "description": "Warehouse labor (hour)",
+        "quantity": "5",
+        "unit_price": "$33.43",
+        "amount": "$167.15"
+      },
+      {
+        "description": "Shipping labels, 1000 pack",
+        "quantity": "20",
+        "unit_price": "$37.60",
+        "amount": "$752.00"
+      }
+    ]
+  }
+}

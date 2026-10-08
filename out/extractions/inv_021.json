@@ -1,0 +1,49 @@
+{
+  "file": "inv_021.pdf",
+  "route": "text",
+  "seconds": 38.2,
+  "raw": {
+    "supplier_name": "Northwind Office Supply Inc.",
+    "supplier_tax_id": "08-6201913",
+    "invoice_number": "INV-1153",
+    "invoice_date": "Sep 12, 2026",
+    "due_date": "Oct 12, 2026",
+    "currency": "$",
+    "subtotal": "$2,708.04",
+    "tax_rate": "Sales Tax (0%)",
+    "tax_amount": "$0.00",
+    "total": "$2,708.04",
+    "line_items": [
+      {
+        "description": "Freight handling, pallet",
+        "quantity": "6",
+        "unit_price": "$40.04",
+        "amount": "$240.24"
+      },
+      {
+        "description": "Shipping labels, 1000 pack",
+        "quantity": "10",
+        "unit_price": "$31.08",
+        "amount": "$310.80"
+      },
+      {
+        "description": "Corrugated boxes 24x18x12",
+        "quantity": "25",
+        "unit_price": "$1.29",
+        "amount": "$32.25"
+      },
+      {
+        "description": "Printer paper, case",
+        "quantity": "25",
+        "unit_price": "$40.21",
+        "amount": "$1,005.25"
+      },
+      {
+        "description": "Stretch wrap roll 18in",
+        "quantity": "50",
+        "unit_price": "$22.39",
+        "amount": "$1,119.50"
+      }
+    ]
+  }
+}

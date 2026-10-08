@@ -1,0 +1,45 @@
+{
+  "doc_id": "inv_022",
+  "file": "inv_022.pdf",
+  "layout": "fr",
+  "photo": false,
+  "anomaly": null,
+  "invoice": {
+    "supplier_name": "Transports Lefèvre SAS",
+    "supplier_tax_id": "FR64403301320",
+    "invoice_number": "F2026-1160",
+    "invoice_date": "2026-09-29",
+    "due_date": "2026-11-13",
+    "currency": "EUR",
+    "subtotal": 2109.64,
+    "tax_rate": 5.5,
+    "tax_amount": 116.03,
+    "total": 2225.67,
+    "line_items": [
+      {
+        "description": "Carton double cannelure",
+        "quantity": 6.0,
+        "unit_price": 1.8,
+        "amount": 10.8
+      },
+      {
+        "description": "Prestation de maintenance",
+        "quantity": 6.0,
+        "unit_price": 107.54,
+        "amount": 645.24
+      },
+      {
+        "description": "Cartouche toner noir",
+        "quantity": 10.0,
+        "unit_price": 49.4,
+        "amount": 494.0
+      },
+      {
+        "description": "Transport palette Lyon-Paris",
+        "quantity": 8.0,
+        "unit_price": 119.95,
+        "amount": 959.6
+      }
+    ]
+  }
+}

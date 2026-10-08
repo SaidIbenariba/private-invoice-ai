@@ -1,0 +1,1116 @@
+{
+  "summary": {
+    "documents": 24,
+    "auto_approved": 16,
+    "auto_approval_rate": 0.6666666666666666,
+    "auto_approve_precision": 1.0,
+    "errors_reaching_approval": 0,
+    "anomalies_total": 8,
+    "anomalies_caught": 8,
+    "fully_correct_extractions": 24,
+    "line_items_correct": 24,
+    "field_accuracy": {
+      "supplier_name": 1.0,
+      "supplier_tax_id": 1.0,
+      "invoice_number": 1.0,
+      "invoice_date": 1.0,
+      "due_date": 1.0,
+      "currency": 1.0,
+      "subtotal": 1.0,
+      "tax_rate": 1.0,
+      "tax_amount": 1.0,
+      "total": 1.0
+    },
+    "header_field_accuracy": 1.0,
+    "avg_seconds": {
+      "text": 47.8,
+      "vision": 85.6
+    }
+  },
+  "documents": [
+    {
+      "file": "inv_001.pdf",
+      "status": "APPROVED",
+      "route": "text",
+      "seconds": 75.6,
+      "issues": [],
+      "invoice": {
+        "supplier_name": "Brightline Logistics LLC",
+        "supplier_tax_id": "51-8190937",
+        "invoice_number": "INV-1012",
+        "invoice_date": "2026-09-04",
+        "due_date": "2026-10-19",
+        "currency": "USD",
+        "subtotal": 1935.74,
+        "tax_rate": 0.0,
+        "tax_amount": 0.0,
+        "total": 1935.74,
+        "line_items": [
+          {
+            "description": "Freight handling, pallet",
+            "quantity": 5.0,
+            "unit_price": 58.05,
+            "amount": 290.25
+          },
+          {
+            "description": "Corrugated boxes 24x18x12",
+            "quantity": 12.0,
+            "unit_price": 1.47,
+            "amount": 17.64
+          },
+          {
+            "description": "Shipping labels, 1000 pack",
+            "quantity": 5.0,
+            "unit_price": 32.08,
+            "amount": 160.4
+          },
+          {
+            "description": "Stretch wrap roll 18in",
+            "quantity": 25.0,
+            "unit_price": 20.53,
+            "amount": 513.25
+          },
+          {
+            "description": "Printer paper, case",
+            "quantity": 20.0,
+            "unit_price": 47.71,
+            "amount": 954.2
+          }
+        ]
+      },
+      "fully_correct": true,
+      "anomaly": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "inv_002.jpg",
+      "status": "REVIEW",
+      "route": "vision",
+      "seconds": 98.8,
+      "issues": [
+        {
+          "code": "duplicate",
+          "message": "invoice INV-1012 from Brightline Logistics LLC already processed"
+        }
+      ],
+      "invoice": {
+        "supplier_name": "Brightline Logistics LLC",
+        "supplier_tax_id": "51-8190937",
+        "invoice_number": "INV-1012",
+        "invoice_date": "2026-09-30",
+        "due_date": "2026-10-15",
+        "currency": "USD",
+        "subtotal": 3882.37,
+        "tax_rate": 10.0,
+        "tax_amount": 388.24,
+        "total": 4270.61,
+        "line_items": [
+          {
+            "description": "Cartouche toner noir",
+            "quantity": 50.0,
+            "unit_price": 75.57,
+            "amount": 3778.5
+          },
+          {
+            "description": "Prestation de maintenance",
+            "quantity": 1.0,
+            "unit_price": 103.87,
+            "amount": 103.87
+          }
+        ]
+      },
+      "fully_correct": true,
+      "anomaly": "duplicate",
+      "wrong_fields": []
+    },
+    {
+      "file": "inv_003.pdf",
+      "status": "APPROVED",
+      "route": "text",
+      "seconds": 76.4,
+      "issues": [],
+      "invoice": {
+        "supplier_name": "Thames Valley Couriers Ltd",
+        "supplier_tax_id": "GB741215472",
+        "invoice_number": "TV1023",
+        "invoice_date": "2026-09-30",
+        "due_date": "2026-11-14",
+        "currency": "GBP",
+        "subtotal": 590.76,
+        "tax_rate": 20.0,
+        "tax_amount": 118.15,
+        "total": 708.91,
+        "line_items": [
+          {
+            "description": "Courier fuel surcharge",
+            "quantity": 25.0,
+            "unit_price": 6.0,
+            "amount": 150.0
+          },
+          {
+            "description": "Design hours",
+            "quantity": 4.0,
+            "unit_price": 36.68,
+            "amount": 146.72
+          },
+          {
+            "description": "Printed flyers A5 (500)",
+            "quantity": 4.0,
+            "unit_price": 54.86,
+            "amount": 219.44
+          },
+          {
+            "description": "Same-day courier, zone 2",
+            "quantity": 2.0,
+            "unit_price": 30.84,
+            "amount": 61.68
+          },
+          {
+            "description": "Mailing bags, large (100)",
+            "quantity": 1.0,
+            "unit_price": 12.92,
+            "amount": 12.92
+          }
+        ]
+      },
+      "fully_correct": true,
+      "anomaly": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "inv_004.pdf",
+      "status": "APPROVED",
+      "route": "text",
+      "seconds": 58.6,
+      "issues": [],
+      "invoice": {
+        "supplier_name": "BUREAUTIQUE RABAT SARL",
+        "supplier_tax_id": "516761222029729",
+        "invoice_number": "2026/1034",
+        "invoice_date": "2026-09-15",
+        "due_date": "2026-10-30",
+        "currency": "MAD",
+        "subtotal": 2090.76,
+        "tax_rate": 10.0,
+        "tax_amount": 209.08,
+        "total": 2299.84,
+        "line_items": [
+          {
+            "description": "Rame papier A4",
+            "quantity": 4.0,
+            "unit_price": 41.4,
+            "amount": 165.6
+          },
+          {
+            "description": "Main d'oeuvre (heure)",
+            "quantity": 10.0,
+            "unit_price": 114.89,
+            "amount": 1148.9
+          },
+          {
+            "description": "Toner imprimante",
+            "quantity": 1.0,
+            "unit_price": 776.26,
+            "amount": 776.26
+          }
+        ]
+      },
+      "fully_correct": true,
+      "anomaly": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "inv_005.jpg",
+      "status": "REVIEW",
+      "route": "vision",
+      "seconds": 105.9,
+      "issues": [
+        {
+          "code": "line_amount_mismatch",
+          "message": "line 1: 12.0 x 76.22 = 914.64, invoice says 924.64"
+        }
+      ],
+      "invoice": {
+        "supplier_name": "Northwind Office Supply Inc.",
+        "supplier_tax_id": "34-8395486",
+        "invoice_number": "INV-1036",
+        "invoice_date": "2026-09-23",
+        "due_date": "2026-10-08",
+        "currency": "USD",
+        "subtotal": 1182.23,
+        "tax_rate": 8.25,
+        "tax_amount": 97.53,
+        "total": 1279.76,
+        "line_items": [
+          {
+            "description": "Freight handling, pallet",
+            "quantity": 12.0,
+            "unit_price": 76.22,
+            "amount": 924.64
+          },
+          {
+            "description": "Shipping labels, 1000 pack",
+            "quantity": 3.0,
+            "unit_price": 29.81,
+            "amount": 89.43
+          },
+          {
+            "description": "Warehouse labor (hour)",
+            "quantity": 4.0,
+            "unit_price": 42.04,
+            "amount": 168.16
+          }
+        ]
+      },
+      "fully_correct": true,
+      "anomaly": "line_amount_mismatch",
+      "wrong_fields": []
+    },
+    {
+      "file": "inv_006.jpg",
+      "status": "APPROVED",
+      "route": "vision",
+      "seconds": 102.9,
+      "issues": [],
+      "invoice": {
+        "supplier_name": "Atelier Durand SARL",
+        "supplier_tax_id": "FR13613412524",
+        "invoice_number": "F2026-1047",
+        "invoice_date": "2026-09-29",
+        "due_date": "2026-10-29",
+        "currency": "EUR",
+        "subtotal": 1587.26,
+        "tax_rate": 10.0,
+        "tax_amount": 158.73,
+        "total": 1745.99,
+        "line_items": [
+          {
+            "description": "Heure de manutention",
+            "quantity": 12.0,
+            "unit_price": 40.53,
+            "amount": 486.36
+          },
+          {
+            "description": "Cartouche toner noir",
+            "quantity": 10.0,
+            "unit_price": 69.31,
+            "amount": 693.1
+          },
+          {
+            "description": "Prestation de maintenance",
+            "quantity": 4.0,
+            "unit_price": 101.95,
+            "amount": 407.8
+          }
+        ]
+      },
+      "fully_correct": true,
+      "anomaly": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "inv_007.jpg",
+      "status": "APPROVED",
+      "route": "vision",
+      "seconds": 114.7,
+      "issues": [],
+      "invoice": {
+        "supplier_name": "Thames Valley Couriers Ltd",
+        "supplier_tax_id": "GB864920831",
+        "invoice_number": "TV1055",
+        "invoice_date": "2026-09-07",
+        "due_date": "2026-09-22",
+        "currency": "GBP",
+        "subtotal": 2035.62,
+        "tax_rate": 20.0,
+        "tax_amount": 407.12,
+        "total": 2442.74,
+        "line_items": [
+          {
+            "description": "Mailing bags, large (100)",
+            "quantity": 3.0,
+            "unit_price": 19.38,
+            "amount": 58.14
+          },
+          {
+            "description": "Same-day courier, zone 2",
+            "quantity": 25.0,
+            "unit_price": 43.29,
+            "amount": 1082.25
+          },
+          {
+            "description": "Courier fuel surcharge",
+            "quantity": 5.0,
+            "unit_price": 6.03,
+            "amount": 30.15
+          },
+          {
+            "description": "Printed flyers A5 (500)",
+            "quantity": 12.0,
+            "unit_price": 72.09,
+            "amount": 865.08
+          }
+        ]
+      },
+      "fully_correct": true,
+      "anomaly": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "inv_008.jpg",
+      "status": "APPROVED",
+      "route": "vision",
+      "seconds": 98.3,
+      "issues": [],
+      "invoice": {
+        "supplier_name": "BUREAUTIQUE RABAT SARL",
+        "supplier_tax_id": "455853043520561",
+        "invoice_number": "2026/1059",
+        "invoice_date": "2026-09-16",
+        "due_date": "2026-10-16",
+        "currency": "MAD",
+        "subtotal": 1953.92,
+        "tax_rate": 10.0,
+        "tax_amount": 195.39,
+        "total": 2149.31,
+        "line_items": [
+          {
+            "description": "Main d'oeuvre (heure)",
+            "quantity": 12.0,
+            "unit_price": 148.42,
+            "amount": 1781.04
+          },
+          {
+            "description": "Emballage carton",
+            "quantity": 8.0,
+            "unit_price": 21.61,
+            "amount": 172.88
+          }
+        ]
+      },
+      "fully_correct": true,
+      "anomaly": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "inv_009.pdf",
+      "status": "REVIEW",
+      "route": "text",
+      "seconds": 43.7,
+      "issues": [
+        {
+          "code": "total_mismatch",
+          "message": "subtotal + tax = 374.45, total says 464.45"
+        }
+      ],
+      "invoice": {
+        "supplier_name": "Brightline Logistics LLC",
+        "supplier_tax_id": "57-2492086",
+        "invoice_number": "INV-1064",
+        "invoice_date": "2026-09-10",
+        "due_date": "2026-10-10",
+        "currency": "USD",
+        "subtotal": 374.45,
+        "tax_rate": 0.0,
+        "tax_amount": 0.0,
+        "total": 464.45,
+        "line_items": [
+          {
+            "description": "Printer paper, case",
+            "quantity": 5.0,
+            "unit_price": 43.17,
+            "amount": 215.85
+          },
+          {
+            "description": "Freight handling, pallet",
+            "quantity": 4.0,
+            "unit_price": 39.65,
+            "amount": 158.6
+          }
+        ]
+      },
+      "fully_correct": true,
+      "anomaly": "total_mismatch",
+      "wrong_fields": []
+    },
+    {
+      "file": "inv_010.pdf",
+      "status": "APPROVED",
+      "route": "text",
+      "seconds": 77.5,
+      "issues": [],
+      "invoice": {
+        "supplier_name": "Atelier Durand SARL",
+        "supplier_tax_id": "FR48477718341",
+        "invoice_number": "F2026-1071",
+        "invoice_date": "2026-09-15",
+        "due_date": "2026-10-30",
+        "currency": "EUR",
+        "subtotal": 5990.07,
+        "tax_rate": 5.5,
+        "tax_amount": 329.45,
+        "total": 6319.52,
+        "line_items": [
+          {
+            "description": "Prestation de maintenance",
+            "quantity": 1.0,
+            "unit_price": 97.02,
+            "amount": 97.02
+          },
+          {
+            "description": "Heure de manutention",
+            "quantity": 25.0,
+            "unit_price": 35.17,
+            "amount": 879.25
+          },
+          {
+            "description": "Transport palette Lyon-Paris",
+            "quantity": 20.0,
+            "unit_price": 96.06,
+            "amount": 1921.2
+          },
+          {
+            "description": "Ramette papier A4 80g",
+            "quantity": 5.0,
+            "unit_price": 6.72,
+            "amount": 33.6
+          },
+          {
+            "description": "Cartouche toner noir",
+            "quantity": 50.0,
+            "unit_price": 61.18,
+            "amount": 3059.0
+          }
+        ]
+      },
+      "fully_correct": true,
+      "anomaly": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "inv_011.pdf",
+      "status": "APPROVED",
+      "route": "text",
+      "seconds": 55.8,
+      "issues": [],
+      "invoice": {
+        "supplier_name": "Pennine Print & Pack Ltd",
+        "supplier_tax_id": "GB410423468",
+        "invoice_number": "TV1082",
+        "invoice_date": "2026-09-26",
+        "due_date": "2026-10-11",
+        "currency": "GBP",
+        "subtotal": 652.68,
+        "tax_rate": 20.0,
+        "tax_amount": 130.54,
+        "total": 783.22,
+        "line_items": [
+          {
+            "description": "Same-day courier, zone 2",
+            "quantity": 10.0,
+            "unit_price": 32.54,
+            "amount": 325.4
+          },
+          {
+            "description": "Courier fuel surcharge",
+            "quantity": 50.0,
+            "unit_price": 4.7,
+            "amount": 235.0
+          },
+          {
+            "description": "Mailing bags, large (100)",
+            "quantity": 6.0,
+            "unit_price": 15.38,
+            "amount": 92.28
+          }
+        ]
+      },
+      "fully_correct": true,
+      "anomaly": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "inv_012.pdf",
+      "status": "APPROVED",
+      "route": "text",
+      "seconds": 56.7,
+      "issues": [],
+      "invoice": {
+        "supplier_name": "BUREAUTIQUE RABAT SARL",
+        "supplier_tax_id": "549306668364507",
+        "invoice_number": "2026/1086",
+        "invoice_date": "2026-09-04",
+        "due_date": "2026-10-19",
+        "currency": "MAD",
+        "subtotal": 1274.89,
+        "tax_rate": 7.0,
+        "tax_amount": 89.24,
+        "total": 1364.13,
+        "line_items": [
+          {
+            "description": "Rame papier A4",
+            "quantity": 6.0,
+            "unit_price": 42.79,
+            "amount": 256.74
+          },
+          {
+            "description": "Main d'oeuvre (heure)",
+            "quantity": 5.0,
+            "unit_price": 141.73,
+            "amount": 708.65
+          },
+          {
+            "description": "Emballage carton",
+            "quantity": 25.0,
+            "unit_price": 12.38,
+            "amount": 309.5
+          }
+        ]
+      },
+      "fully_correct": true,
+      "anomaly": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "inv_013.jpg",
+      "status": "APPROVED",
+      "route": "vision",
+      "seconds": 103.5,
+      "issues": [],
+      "invoice": {
+        "supplier_name": "Northwind Office Supply Inc.",
+        "supplier_tax_id": "20-6797016",
+        "invoice_number": "INV-1091",
+        "invoice_date": "2026-09-09",
+        "due_date": "2026-10-24",
+        "currency": "USD",
+        "subtotal": 712.17,
+        "tax_rate": 0.0,
+        "tax_amount": 0.0,
+        "total": 712.17,
+        "line_items": [
+          {
+            "description": "Freight handling, pallet",
+            "quantity": 8.0,
+            "unit_price": 56.99,
+            "amount": 455.92
+          },
+          {
+            "description": "Stretch wrap roll 18in",
+            "quantity": 10.0,
+            "unit_price": 24.05,
+            "amount": 240.5
+          },
+          {
+            "description": "Corrugated boxes 24x18x12",
+            "quantity": 5.0,
+            "unit_price": 3.15,
+            "amount": 15.75
+          }
+        ]
+      },
+      "fully_correct": true,
+      "anomaly": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "inv_014.jpg",
+      "status": "REVIEW",
+      "route": "vision",
+      "seconds": 107.4,
+      "issues": [
+        {
+          "code": "total_mismatch",
+          "message": "subtotal + tax = 561.14, total says 651.14"
+        }
+      ],
+      "invoice": {
+        "supplier_name": "Atelier Durand SARL",
+        "supplier_tax_id": "FR65630481373",
+        "invoice_number": "F2026-1101",
+        "invoice_date": "2026-10-01",
+        "due_date": "2026-11-15",
+        "currency": "EUR",
+        "subtotal": 531.89,
+        "tax_rate": 5.5,
+        "tax_amount": 29.25,
+        "total": 651.14,
+        "line_items": [
+          {
+            "description": "Carton double cannelure",
+            "quantity": 8.0,
+            "unit_price": 2.37,
+            "amount": 18.96
+          },
+          {
+            "description": "Ramette papier A4 80g",
+            "quantity": 5.0,
+            "unit_price": 4.69,
+            "amount": 23.45
+          },
+          {
+            "description": "Transport palette Lyon-Paris",
+            "quantity": 4.0,
+            "unit_price": 122.37,
+            "amount": 489.48
+          }
+        ]
+      },
+      "fully_correct": true,
+      "anomaly": "total_mismatch",
+      "wrong_fields": []
+    },
+    {
+      "file": "inv_015.pdf",
+      "status": "APPROVED",
+      "route": "text",
+      "seconds": 42.4,
+      "issues": [],
+      "invoice": {
+        "supplier_name": "Thames Valley Couriers Ltd",
+        "supplier_tax_id": "GB557063606",
+        "invoice_number": "TV1110",
+        "invoice_date": "2026-09-06",
+        "due_date": "2026-09-21",
+        "currency": "GBP",
+        "subtotal": 2447.39,
+        "tax_rate": 20.0,
+        "tax_amount": 489.48,
+        "total": 2936.87,
+        "line_items": [
+          {
+            "description": "Printed flyers A5 (500)",
+            "quantity": 1.0,
+            "unit_price": 50.23,
+            "amount": 50.23
+          },
+          {
+            "description": "Design hours",
+            "quantity": 50.0,
+            "unit_price": 44.47,
+            "amount": 2223.5
+          },
+          {
+            "description": "Mailing bags, large (100)",
+            "quantity": 6.0,
+            "unit_price": 20.86,
+            "amount": 125.16
+          },
+          {
+            "description": "Courier fuel surcharge",
+            "quantity": 10.0,
+            "unit_price": 4.85,
+            "amount": 48.5
+          }
+        ]
+      },
+      "fully_correct": true,
+      "anomaly": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "inv_016.pdf",
+      "status": "APPROVED",
+      "route": "text",
+      "seconds": 25.4,
+      "issues": [],
+      "invoice": {
+        "supplier_name": "BUREAUTIQUE RABAT SARL",
+        "supplier_tax_id": "526114913167723",
+        "invoice_number": "2026/1113",
+        "invoice_date": "2026-09-18",
+        "due_date": "2026-10-18",
+        "currency": "MAD",
+        "subtotal": 2032.52,
+        "tax_rate": 10.0,
+        "tax_amount": 203.25,
+        "total": 2235.77,
+        "line_items": [
+          {
+            "description": "Emballage carton",
+            "quantity": 1.0,
+            "unit_price": 19.74,
+            "amount": 19.74
+          },
+          {
+            "description": "Transport marchandises Casa-Rabat",
+            "quantity": 2.0,
+            "unit_price": 1006.39,
+            "amount": 2012.78
+          }
+        ]
+      },
+      "fully_correct": true,
+      "anomaly": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "inv_017.pdf",
+      "status": "REVIEW",
+      "route": "text",
+      "seconds": 21.0,
+      "issues": [
+        {
+          "code": "missing_tax_id",
+          "message": "supplier tax ID (VAT / ICE) not found"
+        }
+      ],
+      "invoice": {
+        "supplier_name": "Keystone Packaging Co.",
+        "supplier_tax_id": null,
+        "invoice_number": "INV-1120",
+        "invoice_date": "2026-09-16",
+        "due_date": "2026-10-31",
+        "currency": "USD",
+        "subtotal": 289.12,
+        "tax_rate": 8.25,
+        "tax_amount": 23.85,
+        "total": 312.97,
+        "line_items": [
+          {
+            "description": "Stretch wrap roll 18in",
+            "quantity": 5.0,
+            "unit_price": 25.94,
+            "amount": 129.7
+          },
+          {
+            "description": "Shipping labels, 1000 pack",
+            "quantity": 6.0,
+            "unit_price": 26.57,
+            "amount": 159.42
+          }
+        ]
+      },
+      "fully_correct": true,
+      "anomaly": "missing_tax_id",
+      "wrong_fields": []
+    },
+    {
+      "file": "inv_018.pdf",
+      "status": "APPROVED",
+      "route": "text",
+      "seconds": 28.3,
+      "issues": [],
+      "invoice": {
+        "supplier_name": "Atelier Durand SARL",
+        "supplier_tax_id": "FR04310399315",
+        "invoice_number": "F2026-1131",
+        "invoice_date": "2026-09-16",
+        "due_date": "2026-10-01",
+        "currency": "EUR",
+        "subtotal": 399.47,
+        "tax_rate": 5.5,
+        "tax_amount": 21.97,
+        "total": 421.44,
+        "line_items": [
+          {
+            "description": "Cartouche toner noir",
+            "quantity": 6.0,
+            "unit_price": 51.59,
+            "amount": 309.54
+          },
+          {
+            "description": "Carton double cannelure",
+            "quantity": 5.0,
+            "unit_price": 2.89,
+            "amount": 14.45
+          },
+          {
+            "description": "Ramette papier A4 80g",
+            "quantity": 12.0,
+            "unit_price": 6.29,
+            "amount": 75.48
+          }
+        ]
+      },
+      "fully_correct": true,
+      "anomaly": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "inv_019.pdf",
+      "status": "REVIEW",
+      "route": "text",
+      "seconds": 22.0,
+      "issues": [
+        {
+          "code": "tax_mismatch",
+          "message": "20.0% of 424.88 = 84.98, invoice says 76.48"
+        }
+      ],
+      "invoice": {
+        "supplier_name": "Pennine Print & Pack Ltd",
+        "supplier_tax_id": "GB306261169",
+        "invoice_number": "TV1134",
+        "invoice_date": "2026-09-05",
+        "due_date": "2026-09-20",
+        "currency": "GBP",
+        "subtotal": 424.88,
+        "tax_rate": 20.0,
+        "tax_amount": 76.48,
+        "total": 501.36,
+        "line_items": [
+          {
+            "description": "Courier fuel surcharge",
+            "quantity": 2.0,
+            "unit_price": 6.04,
+            "amount": 12.08
+          },
+          {
+            "description": "Design hours",
+            "quantity": 8.0,
+            "unit_price": 51.6,
+            "amount": 412.8
+          }
+        ]
+      },
+      "fully_correct": true,
+      "anomaly": "tax_mismatch",
+      "wrong_fields": []
+    },
+    {
+      "file": "inv_020.jpg",
+      "status": "REVIEW",
+      "route": "vision",
+      "seconds": 23.8,
+      "issues": [
+        {
+          "code": "line_amount_mismatch",
+          "message": "line 1: 10.0 x 1215.17 = 12151.7, invoice says 12251.7"
+        }
+      ],
+      "invoice": {
+        "supplier_name": "ATLAS TRANSPORT SARL",
+        "supplier_tax_id": "169784649366578",
+        "invoice_number": "2026/1143",
+        "invoice_date": "2026-10-04",
+        "due_date": "2026-10-19",
+        "currency": "MAD",
+        "subtotal": 12696.14,
+        "tax_rate": 10.0,
+        "tax_amount": 1269.61,
+        "total": 13965.75,
+        "line_items": [
+          {
+            "description": "Transport marchandises Casa-Rabat",
+            "quantity": 10.0,
+            "unit_price": 1215.17,
+            "amount": 12251.7
+          },
+          {
+            "description": "Main d'oeuvre (heure)",
+            "quantity": 4.0,
+            "unit_price": 111.11,
+            "amount": 444.44
+          }
+        ]
+      },
+      "fully_correct": true,
+      "anomaly": "line_amount_mismatch",
+      "wrong_fields": []
+    },
+    {
+      "file": "inv_021.pdf",
+      "status": "APPROVED",
+      "route": "text",
+      "seconds": 38.2,
+      "issues": [],
+      "invoice": {
+        "supplier_name": "Northwind Office Supply Inc.",
+        "supplier_tax_id": "08-6201913",
+        "invoice_number": "INV-1153",
+        "invoice_date": "2026-09-12",
+        "due_date": "2026-10-12",
+        "currency": "USD",
+        "subtotal": 2708.04,
+        "tax_rate": 0.0,
+        "tax_amount": 0.0,
+        "total": 2708.04,
+        "line_items": [
+          {
+            "description": "Freight handling, pallet",
+            "quantity": 6.0,
+            "unit_price": 40.04,
+            "amount": 240.24
+          },
+          {
+            "description": "Shipping labels, 1000 pack",
+            "quantity": 10.0,
+            "unit_price": 31.08,
+            "amount": 310.8
+          },
+          {
+            "description": "Corrugated boxes 24x18x12",
+            "quantity": 25.0,
+            "unit_price": 1.29,
+            "amount": 32.25
+          },
+          {
+            "description": "Printer paper, case",
+            "quantity": 25.0,
+            "unit_price": 40.21,
+            "amount": 1005.25
+          },
+          {
+            "description": "Stretch wrap roll 18in",
+            "quantity": 50.0,
+            "unit_price": 22.39,
+            "amount": 1119.5
+          }
+        ]
+      },
+      "fully_correct": true,
+      "anomaly": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "inv_022.jpg",
+      "status": "APPROVED",
+      "route": "vision",
+      "seconds": 62.5,
+      "issues": [],
+      "invoice": {
+        "supplier_name": "Atelier Durand SARL",
+        "supplier_tax_id": "FR44950032496",
+        "invoice_number": "F2026-1155",
+        "invoice_date": "2026-10-04",
+        "due_date": "2026-10-19",
+        "currency": "EUR",
+        "subtotal": 1860.84,
+        "tax_rate": 10.0,
+        "tax_amount": 186.08,
+        "total": 2046.92,
+        "line_items": [
+          {
+            "description": "Prestation de maintenance",
+            "quantity": 12.0,
+            "unit_price": 97.79,
+            "amount": 1173.48
+          },
+          {
+            "description": "Carton double cannelure",
+            "quantity": 8.0,
+            "unit_price": 2.43,
+            "amount": 19.44
+          },
+          {
+            "description": "Transport palette Lyon-Paris",
+            "quantity": 6.0,
+            "unit_price": 104.86,
+            "amount": 629.16
+          },
+          {
+            "description": "Ramette papier A4 80g",
+            "quantity": 6.0,
+            "unit_price": 6.46,
+            "amount": 38.76
+          }
+        ]
+      },
+      "fully_correct": true,
+      "anomaly": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "inv_023.jpg",
+      "status": "REVIEW",
+      "route": "vision",
+      "seconds": 57.9,
+      "issues": [
+        {
+          "code": "due_before_issue",
+          "message": "due date 2026-09-22 is before invoice date 2026-09-29"
+        }
+      ],
+      "invoice": {
+        "supplier_name": "Thames Valley Couriers Ltd",
+        "supplier_tax_id": "GB263898692",
+        "invoice_number": "TV1161",
+        "invoice_date": "2026-09-29",
+        "due_date": "2026-09-22",
+        "currency": "GBP",
+        "subtotal": 1358.83,
+        "tax_rate": 20.0,
+        "tax_amount": 271.77,
+        "total": 1630.6,
+        "line_items": [
+          {
+            "description": "Mailing bags, large (100)",
+            "quantity": 1.0,
+            "unit_price": 12.51,
+            "amount": 12.51
+          },
+          {
+            "description": "Courier fuel surcharge",
+            "quantity": 12.0,
+            "unit_price": 8.46,
+            "amount": 101.52
+          },
+          {
+            "description": "Printed flyers A5 (500)",
+            "quantity": 20.0,
+            "unit_price": 62.24,
+            "amount": 1244.8
+          }
+        ]
+      },
+      "fully_correct": true,
+      "anomaly": "due_before_issue",
+      "wrong_fields": []
+    },
+    {
+      "file": "inv_024.jpg",
+      "status": "APPROVED",
+      "route": "vision",
+      "seconds": 66.3,
+      "issues": [],
+      "invoice": {
+        "supplier_name": "BUREAUTIQUE RABAT SARL",
+        "supplier_tax_id": "200020101953816",
+        "invoice_number": "2026/1168",
+        "invoice_date": "2026-09-04",
+        "due_date": "2026-10-04",
+        "currency": "MAD",
+        "subtotal": 10160.82,
+        "tax_rate": 10.0,
+        "tax_amount": 1016.08,
+        "total": 11176.9,
+        "line_items": [
+          {
+            "description": "Emballage carton",
+            "quantity": 12.0,
+            "unit_price": 9.2,
+            "amount": 110.4
+          },
+          {
+            "description": "Toner imprimante",
+            "quantity": 5.0,
+            "unit_price": 745.69,
+            "amount": 3728.45
+          },
+          {
+            "description": "Rame papier A4",
+            "quantity": 50.0,
+            "unit_price": 41.45,
+            "amount": 2072.5
+          },
+          {
+            "description": "Transport marchandises Casa-Rabat",
+            "quantity": 3.0,
+            "unit_price": 1209.61,
+            "amount": 3628.83
+          },
+          {
+            "description": "Main d'oeuvre (heure)",
+            "quantity": 6.0,
+            "unit_price": 103.44,
+            "amount": 620.64
+          }
+        ]
+      },
+      "fully_correct": true,
+      "anomaly": null,
+      "wrong_fields": []
+    }
+  ]
+}

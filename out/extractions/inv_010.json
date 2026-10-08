@@ -1,0 +1,49 @@
+{
+  "file": "inv_010.pdf",
+  "route": "text",
+  "seconds": 77.5,
+  "raw": {
+    "supplier_name": "Atelier Durand SARL",
+    "supplier_tax_id": "FR48477718341",
+    "invoice_number": "F2026-1071",
+    "invoice_date": "15/09/2026",
+    "due_date": "30/10/2026",
+    "currency": "€",
+    "subtotal": "5 990,07 €",
+    "tax_rate": "TVA 5,5 %",
+    "tax_amount": "329,45 €",
+    "total": "6 319,52 €",
+    "line_items": [
+      {
+        "description": "Prestation de maintenance",
+        "quantity": "1",
+        "unit_price": "97,02 €",
+        "amount": "97,02 €"
+      },
+      {
+        "description": "Heure de manutention",
+        "quantity": "25",
+        "unit_price": "35,17 €",
+        "amount": "879,25 €"
+      },
+      {
+        "description": "Transport palette Lyon-Paris",
+        "quantity": "20",
+        "unit_price": "96,06 €",
+        "amount": "1 921,20 €"
+      },
+      {
+        "description": "Ramette papier A4 80g",
+        "quantity": "5",
+        "unit_price": "6,72 €",
+        "amount": "33,60 €"
+      },
+      {
+        "description": "Cartouche toner noir",
+        "quantity": "50",
+        "unit_price": "61,18 €",
+        "amount": "3 059,00 €"
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "doc_id": "inv_010",
+  "file": "inv_010.jpg",
+  "layout": "fr",
+  "photo": true,
+  "anomaly": "total_mismatch",
+  "invoice": {
+    "supplier_name": "Transports Lefèvre SAS",
+    "supplier_tax_id": "FR12537392419",
+    "invoice_number": "F2026-1076",
+    "invoice_date": "2026-10-01",
+    "due_date": "2026-10-31",
+    "currency": "EUR",
+    "subtotal": 2379.55,
+    "tax_rate": 20.0,
+    "tax_amount": 475.91,
+    "total": 2945.46,
+    "line_items": [
+      {
+        "description": "Transport palette Lyon-Paris",
+        "quantity": 25.0,
+        "unit_price": 94.06,
+        "amount": 2351.5
+      },
+      {
+        "description": "Ramette papier A4 80g",
+        "quantity": 5.0,
+        "unit_price": 5.61,
+        "amount": 28.05
+      }
+    ]
+  }
+}

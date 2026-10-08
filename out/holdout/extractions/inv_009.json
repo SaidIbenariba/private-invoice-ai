@@ -1,0 +1,43 @@
+{
+  "file": "inv_009.pdf",
+  "route": "text",
+  "seconds": 40.9,
+  "raw": {
+    "supplier_name": "Keystone Packaging Co.",
+    "supplier_tax_id": "51-5474284",
+    "invoice_number": "INV-1066",
+    "invoice_date": "Oct 2, 2026",
+    "due_date": "Nov 1, 2026",
+    "currency": "$",
+    "subtotal": "$1,509.89",
+    "tax_rate": "Sales Tax (8.25%)",
+    "tax_amount": "$124.57",
+    "total": "$1,634.46",
+    "line_items": [
+      {
+        "description": "Corrugated boxes 24x18x12",
+        "quantity": "50",
+        "unit_price": "$3.32",
+        "amount": "$166.00"
+      },
+      {
+        "description": "Shipping labels, 1000 pack",
+        "quantity": "6",
+        "unit_price": "$29.37",
+        "amount": "$276.22"
+      },
+      {
+        "description": "Printer paper, case",
+        "quantity": "20",
+        "unit_price": "$44.49",
+        "amount": "$889.80"
+      },
+      {
+        "description": "Freight handling, pallet",
+        "quantity": "3",
+        "unit_price": "$59.29",
+        "amount": "$177.87"
+      }
+    ]
+  }
+}

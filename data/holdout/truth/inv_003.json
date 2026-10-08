@@ -1,0 +1,39 @@
+{
+  "doc_id": "inv_003",
+  "file": "inv_003.jpg",
+  "layout": "uk",
+  "photo": true,
+  "anomaly": "total_mismatch",
+  "invoice": {
+    "supplier_name": "Pennine Print & Pack Ltd",
+    "supplier_tax_id": "GB177992298",
+    "invoice_number": "TV1027",
+    "invoice_date": "2026-09-09",
+    "due_date": "2026-10-24",
+    "currency": "GBP",
+    "subtotal": 495.34,
+    "tax_rate": 20.0,
+    "tax_amount": 99.07,
+    "total": 684.41,
+    "line_items": [
+      {
+        "description": "Courier fuel surcharge",
+        "quantity": 50.0,
+        "unit_price": 6.52,
+        "amount": 326.0
+      },
+      {
+        "description": "Printed flyers A5 (500)",
+        "quantity": 2.0,
+        "unit_price": 54.04,
+        "amount": 108.08
+      },
+      {
+        "description": "Mailing bags, large (100)",
+        "quantity": 3.0,
+        "unit_price": 20.42,
+        "amount": 61.26
+      }
+    ]
+  }
+}

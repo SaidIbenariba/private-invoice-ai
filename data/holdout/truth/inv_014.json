@@ -1,0 +1,45 @@
+{
+  "doc_id": "inv_014",
+  "file": "inv_014.pdf",
+  "layout": "fr",
+  "photo": false,
+  "anomaly": null,
+  "invoice": {
+    "supplier_name": "Bureau Plus Distribution",
+    "supplier_tax_id": "FR84001981524",
+    "invoice_number": "F2026-1098",
+    "invoice_date": "2026-09-07",
+    "due_date": "2026-10-07",
+    "currency": "EUR",
+    "subtotal": 3556.58,
+    "tax_rate": 5.5,
+    "tax_amount": 195.61,
+    "total": 3752.19,
+    "line_items": [
+      {
+        "description": "Transport palette Lyon-Paris",
+        "quantity": 12.0,
+        "unit_price": 154.19,
+        "amount": 1850.28
+      },
+      {
+        "description": "Heure de manutention",
+        "quantity": 20.0,
+        "unit_price": 33.74,
+        "amount": 674.8
+      },
+      {
+        "description": "Carton double cannelure",
+        "quantity": 25.0,
+        "unit_price": 2.54,
+        "amount": 63.5
+      },
+      {
+        "description": "Prestation de maintenance",
+        "quantity": 10.0,
+        "unit_price": 96.8,
+        "amount": 968.0
+      }
+    ]
+  }
+}

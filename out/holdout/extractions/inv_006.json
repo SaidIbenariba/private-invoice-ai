@@ -1,0 +1,43 @@
+{
+  "file": "inv_006.jpg",
+  "route": "vision",
+  "seconds": 67.9,
+  "raw": {
+    "supplier_name": "Atelier Durand SARL",
+    "supplier_tax_id": "FR36322808864",
+    "invoice_number": "F2026-1045",
+    "invoice_date": "20/09/2026",
+    "due_date": "20/10/2026",
+    "currency": "€",
+    "subtotal": "437,26 €",
+    "tax_rate": "TVA 5,5 %",
+    "tax_amount": "24,05 €",
+    "total": "461,31 €",
+    "line_items": [
+      {
+        "description": "Carton double cannelure",
+        "quantity": "12",
+        "unit_price": "1,20 €",
+        "amount": "14,40 €"
+      },
+      {
+        "description": "Transport palette Lyon-Paris",
+        "quantity": "2",
+        "unit_price": "97,16 €",
+        "amount": "194,32 €"
+      },
+      {
+        "description": "Cartouche toner noir",
+        "quantity": "2",
+        "unit_price": "53,73 €",
+        "amount": "107,46 €"
+      },
+      {
+        "description": "Heure de manutention",
+        "quantity": "3",
+        "unit_price": "40,36 €",
+        "amount": "121,08 €"
+      }
+    ]
+  }
+}

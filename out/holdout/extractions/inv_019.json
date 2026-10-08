@@ -1,0 +1,31 @@
+{
+  "file": "inv_019.pdf",
+  "route": "text",
+  "seconds": 31.5,
+  "raw": {
+    "supplier_name": "Thames Valley Couriers Ltd",
+    "supplier_tax_id": "GB796726835",
+    "invoice_number": "TV1135",
+    "invoice_date": "20 September 2026",
+    "due_date": "4 November 2026",
+    "currency": "£",
+    "subtotal": "£661.64",
+    "tax_rate": "VAT @ 20%",
+    "tax_amount": "£132.33",
+    "total": "£793.97",
+    "line_items": [
+      {
+        "description": "Design hours",
+        "quantity": "12",
+        "unit_price": "£42.45",
+        "amount": "£509.40"
+      },
+      {
+        "description": "Mailing bags, large (100)",
+        "quantity": "8",
+        "unit_price": "£14.03",
+        "amount": "£152.24"
+      }
+    ]
+  }
+}

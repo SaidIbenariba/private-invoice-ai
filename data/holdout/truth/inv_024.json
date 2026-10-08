@@ -1,0 +1,45 @@
+{
+  "doc_id": "inv_024",
+  "file": "inv_024.pdf",
+  "layout": "ma",
+  "photo": false,
+  "anomaly": "missing_tax_id",
+  "invoice": {
+    "supplier_name": "Atlas Transport SARL",
+    "supplier_tax_id": null,
+    "invoice_number": "2026/1170",
+    "invoice_date": "2026-09-15",
+    "due_date": "2026-10-15",
+    "currency": "MAD",
+    "subtotal": 26168.98,
+    "tax_rate": 20.0,
+    "tax_amount": 5233.8,
+    "total": 31402.78,
+    "line_items": [
+      {
+        "description": "Rame papier A4",
+        "quantity": 12.0,
+        "unit_price": 42.28,
+        "amount": 507.36
+      },
+      {
+        "description": "Emballage carton",
+        "quantity": 2.0,
+        "unit_price": 14.07,
+        "amount": 28.14
+      },
+      {
+        "description": "Transport marchandises Casa-Rabat",
+        "quantity": 20.0,
+        "unit_price": 1135.04,
+        "amount": 22700.8
+      },
+      {
+        "description": "Toner imprimante",
+        "quantity": 6.0,
+        "unit_price": 488.78,
+        "amount": 2932.68
+      }
+    ]
+  }
+}

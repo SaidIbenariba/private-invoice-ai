@@ -1,0 +1,49 @@
+{
+  "file": "inv_001.pdf",
+  "route": "text",
+  "seconds": 75.6,
+  "raw": {
+    "supplier_name": "Brightline Logistics LLC",
+    "supplier_tax_id": "51-8190937",
+    "invoice_number": "INV-1012",
+    "invoice_date": "Sep 4, 2026",
+    "due_date": "Oct 19, 2026",
+    "currency": "$",
+    "subtotal": "$1,935.74",
+    "tax_rate": "Sales Tax (0%)",
+    "tax_amount": "$0.00",
+    "total": "$1,935.74",
+    "line_items": [
+      {
+        "description": "Freight handling, pallet",
+        "quantity": "5",
+        "unit_price": "$58.05",
+        "amount": "$290.25"
+      },
+      {
+        "description": "Corrugated boxes 24x18x12",
+        "quantity": "12",
+        "unit_price": "$1.47",
+        "amount": "$17.64"
+      },
+      {
+        "description": "Shipping labels, 1000 pack",
+        "quantity": "5",
+        "unit_price": "$32.08",
+        "amount": "$160.40"
+      },
+      {
+        "description": "Stretch wrap roll 18in",
+        "quantity": "25",
+        "unit_price": "$20.53",
+        "amount": "$513.25"
+      },
+      {
+        "description": "Printer paper, case",
+        "quantity": "20",
+        "unit_price": "$47.71",
+        "amount": "$954.20"
+      }
+    ]
+  }
+}

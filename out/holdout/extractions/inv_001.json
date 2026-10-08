@@ -1,0 +1,43 @@
+{
+  "file": "inv_001.pdf",
+  "route": "text",
+  "seconds": 31.3,
+  "raw": {
+    "supplier_name": "Keystone Packaging Co.",
+    "supplier_tax_id": "05-5761698",
+    "invoice_number": "INV-1011",
+    "invoice_date": "Sep 21, 2026",
+    "due_date": "Sep 4, 2026",
+    "currency": "$",
+    "subtotal": "$2,474.36",
+    "tax_rate": "Sales Tax (8.25%)",
+    "tax_amount": "$204.13",
+    "total": "$2,678.49",
+    "line_items": [
+      {
+        "description": "Stretch wrap roll 18in",
+        "quantity": "12",
+        "unit_price": "$26.93",
+        "amount": "$323.16"
+      },
+      {
+        "description": "Shipping labels, 1000 pack",
+        "quantity": "50",
+        "unit_price": "$28.13",
+        "amount": "$1,406.50"
+      },
+      {
+        "description": "Printer paper, case",
+        "quantity": "12",
+        "unit_price": "$47.15",
+        "amount": "$565.80"
+      },
+      {
+        "description": "Warehouse labor (hour)",
+        "quantity": "5",
+        "unit_price": "$35.78",
+        "amount": "$178.90"
+      }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "file": "inv_013.jpg",
+  "route": "vision",
+  "seconds": 69.9,
+  "raw": {
+    "supplier_name": "Northwind Office Supply Inc.",
+    "supplier_tax_id": "89-7133115",
+    "invoice_number": "INV-1097",
+    "invoice_date": "Sep 14, 2026",
+    "due_date": "Oct 14, 2026",
+    "currency": "$",
+    "subtotal": "$2,670.15",
+    "tax_rate": "Sales Tax (8.25%)",
+    "tax_amount": "$220.29",
+    "total": "$2,890.44",
+    "line_items": [
+      {
+        "description": "Warehouse labor (hour)",
+        "quantity": "10",
+        "unit_price": "$42.55",
+        "amount": "$425.50"
+      },
+      {
+        "description": "Printer paper, case",
+        "quantity": "50",
+        "unit_price": "$41.56",
+        "amount": "$2,078.00"
+      },
+      {
+        "description": "Shipping labels, 1000 pack",
+        "quantity": "5",
+        "unit_price": "$33.33",
+        "amount": "$166.65"
+      }
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "doc_id": "inv_012",
+  "file": "inv_012.pdf",
+  "layout": "ma",
+  "photo": false,
+  "anomaly": null,
+  "invoice": {
+    "supplier_name": "Bureautique Rabat SARL",
+    "supplier_tax_id": "549306668364507",
+    "invoice_number": "2026/1086",
+    "invoice_date": "2026-09-04",
+    "due_date": "2026-10-19",
+    "currency": "MAD",
+    "subtotal": 1274.89,
+    "tax_rate": 7.0,
+    "tax_amount": 89.24,
+    "total": 1364.13,
+    "line_items": [
+      {
+        "description": "Rame papier A4",
+        "quantity": 6.0,
+        "unit_price": 42.79,
+        "amount": 256.74
+      },
+      {
+        "description": "Main d'oeuvre (heure)",
+        "quantity": 5.0,
+        "unit_price": 141.73,
+        "amount": 708.65
+      },
+      {
+        "description": "Emballage carton",
+        "quantity": 25.0,
+        "unit_price": 12.38,
+        "amount": 309.5
+      }
+    ]
+  }
+}

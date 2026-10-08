@@ -1,0 +1,49 @@
+{
+  "file": "inv_002.pdf",
+  "route": "text",
+  "seconds": 38.6,
+  "raw": {
+    "supplier_name": "Bureau Plus Distribution",
+    "supplier_tax_id": "FR78472671475",
+    "invoice_number": "F2026-1019",
+    "invoice_date": "01/10/2026",
+    "due_date": "31/10/2026",
+    "currency": "€",
+    "subtotal": "3 234,49 €",
+    "tax_rate": "TVA 10 %",
+    "tax_amount": "323,45 €",
+    "total": "3 557,94 €",
+    "line_items": [
+      {
+        "description": "Ramette papier A4 80g",
+        "quantity": "3",
+        "unit_price": "6,73 €",
+        "amount": "20,19 €"
+      },
+      {
+        "description": "Cartouche toner noir",
+        "quantity": "20",
+        "unit_price": "87,43 €",
+        "amount": "1 748,60 €"
+      },
+      {
+        "description": "Carton double cannelure",
+        "quantity": "12",
+        "unit_price": "2,77 €",
+        "amount": "33,24 €"
+      },
+      {
+        "description": "Transport palette Lyon-Paris",
+        "quantity": "6",
+        "unit_price": "154,11 €",
+        "amount": "924,66 €"
+      },
+      {
+        "description": "Prestation de maintenance",
+        "quantity": "5",
+        "unit_price": "101,56 €",
+        "amount": "507,80 €"
+      }
+    ]
+  }
+}

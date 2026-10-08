@@ -1,0 +1,37 @@
+{
+  "file": "inv_005.jpg",
+  "route": "vision",
+  "seconds": 105.9,
+  "raw": {
+    "supplier_name": "Northwind Office Supply Inc.",
+    "supplier_tax_id": "34-8395486",
+    "invoice_number": "INV-1036",
+    "invoice_date": "Sep 23, 2026",
+    "due_date": "Oct 8, 2026",
+    "currency": "$",
+    "subtotal": "$1,182.23",
+    "tax_rate": "Sales Tax (8.25%)",
+    "tax_amount": "$97.53",
+    "total": "$1,279.76",
+    "line_items": [
+      {
+        "description": "Freight handling, pallet",
+        "quantity": "12",
+        "unit_price": "$76.22",
+        "amount": "$924.64"
+      },
+      {
+        "description": "Shipping labels, 1000 pack",
+        "quantity": "3",
+        "unit_price": "$29.81",
+        "amount": "$89.43"
+      },
+      {
+        "description": "Warehouse labor (hour)",
+        "quantity": "4",
+        "unit_price": "$42.04",
+        "amount": "$168.16"
+      }
+    ]
+  }
+}

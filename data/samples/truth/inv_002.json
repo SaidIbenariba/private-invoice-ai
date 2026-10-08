@@ -1,0 +1,33 @@
+{
+  "doc_id": "inv_002",
+  "file": "inv_002.jpg",
+  "layout": "us",
+  "photo": true,
+  "anomaly": "duplicate",
+  "invoice": {
+    "supplier_name": "Brightline Logistics LLC",
+    "supplier_tax_id": "51-8190937",
+    "invoice_number": "INV-1012",
+    "invoice_date": "2026-09-30",
+    "due_date": "2026-10-15",
+    "currency": "USD",
+    "subtotal": 3882.37,
+    "tax_rate": 10.0,
+    "tax_amount": 388.24,
+    "total": 4270.61,
+    "line_items": [
+      {
+        "description": "Cartouche toner noir",
+        "quantity": 50.0,
+        "unit_price": 75.57,
+        "amount": 3778.5
+      },
+      {
+        "description": "Prestation de maintenance",
+        "quantity": 1.0,
+        "unit_price": 103.87,
+        "amount": 103.87
+      }
+    ]
+  }
+}

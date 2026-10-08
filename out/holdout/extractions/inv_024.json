@@ -1,0 +1,43 @@
+{
+  "file": "inv_024.pdf",
+  "route": "text",
+  "seconds": 48.6,
+  "raw": {
+    "supplier_name": "ATLAS TRANSPORT SARL",
+    "supplier_tax_id": "",
+    "invoice_number": "2026/1170",
+    "invoice_date": "15.09.2026",
+    "due_date": "15.10.2026",
+    "currency": "DH",
+    "subtotal": "26 168,98 DH",
+    "tax_rate": "TVA 20%",
+    "tax_amount": "5 233,80 DH",
+    "total": "31 402,78 DH",
+    "line_items": [
+      {
+        "description": "Rame papier A4",
+        "quantity": "12",
+        "unit_price": "42,28",
+        "amount": "507,36"
+      },
+      {
+        "description": "Emballage carton",
+        "quantity": "2",
+        "unit_price": "14,07",
+        "amount": "28,14"
+      },
+      {
+        "description": "Transport marchandises Casa-Rabat",
+        "quantity": "20",
+        "unit_price": "1 135,04",
+        "amount": "22 700,80"
+      },
+      {
+        "description": "Toner imprimante",
+        "quantity": "6",
+        "unit_price": "488,78",
+        "amount": "2 932,68"
+      }
+    ]
+  }
+}

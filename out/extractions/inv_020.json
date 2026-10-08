@@ -1,0 +1,31 @@
+{
+  "file": "inv_020.jpg",
+  "route": "vision",
+  "seconds": 23.8,
+  "raw": {
+    "supplier_name": "ATLAS TRANSPORT SARL",
+    "supplier_tax_id": "169784649366578",
+    "invoice_number": "2026/1143",
+    "invoice_date": "04.10.2026",
+    "due_date": "19.10.2026",
+    "currency": "DH",
+    "subtotal": "12 696,14 DH",
+    "tax_rate": "TVA 10%",
+    "tax_amount": "1 269,61 DH",
+    "total": "13 965,75 DH",
+    "line_items": [
+      {
+        "description": "Transport marchandises Casa-Rabat",
+        "quantity": "10",
+        "unit_price": "1 215,17",
+        "amount": "12 251,70"
+      },
+      {
+        "description": "Main d'oeuvre (heure)",
+        "quantity": "4",
+        "unit_price": "111,11",
+        "amount": "444,44"
+      }
+    ]
+  }
+}

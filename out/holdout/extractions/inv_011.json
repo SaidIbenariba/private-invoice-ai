@@ -1,0 +1,43 @@
+{
+  "file": "inv_011.pdf",
+  "route": "text",
+  "seconds": 41.0,
+  "raw": {
+    "supplier_name": "Pennine Print & Pack Ltd",
+    "supplier_tax_id": "GB930733688",
+    "invoice_number": "TV1081",
+    "invoice_date": "13 September 2026",
+    "due_date": "13 October 2026",
+    "currency": "£",
+    "subtotal": "£4,923.73",
+    "tax_rate": "VAT @ 20%",
+    "tax_amount": "£984.75",
+    "total": "£5,908.48",
+    "line_items": [
+      {
+        "description": "Design hours",
+        "quantity": "20",
+        "unit_price": "£36.35",
+        "amount": "£727.00"
+      },
+      {
+        "description": "Courier fuel surcharge",
+        "quantity": "8",
+        "unit_price": "£8.31",
+        "amount": "£66.48"
+      },
+      {
+        "description": "Printed flyers A5 (500)",
+        "quantity": "50",
+        "unit_price": "£64.99",
+        "amount": "£3,249.50"
+      },
+      {
+        "description": "Same-day courier, zone 2",
+        "quantity": "25",
+        "unit_price": "£35.23",
+        "amount": "£880.75"
+      }
+    ]
+  }
+}

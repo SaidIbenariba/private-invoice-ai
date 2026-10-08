@@ -1,0 +1,33 @@
+{
+  "doc_id": "inv_016",
+  "file": "inv_016.pdf",
+  "layout": "ma",
+  "photo": false,
+  "anomaly": null,
+  "invoice": {
+    "supplier_name": "Bureautique Rabat SARL",
+    "supplier_tax_id": "232838564271051",
+    "invoice_number": "2026/1117",
+    "invoice_date": "2026-09-04",
+    "due_date": "2026-10-04",
+    "currency": "MAD",
+    "subtotal": 5773.95,
+    "tax_rate": 20.0,
+    "tax_amount": 1154.79,
+    "total": 6928.74,
+    "line_items": [
+      {
+        "description": "Rame papier A4",
+        "quantity": 5.0,
+        "unit_price": 41.48,
+        "amount": 207.4
+      },
+      {
+        "description": "Transport marchandises Casa-Rabat",
+        "quantity": 5.0,
+        "unit_price": 1113.31,
+        "amount": 5566.55
+      }
+    ]
+  }
+}

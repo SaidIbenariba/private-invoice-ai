@@ -1,0 +1,37 @@
+{
+  "file": "inv_018.jpg",
+  "route": "vision",
+  "seconds": 75.0,
+  "raw": {
+    "supplier_name": "Transports Lefèvre SAS",
+    "supplier_tax_id": "FR98033463521",
+    "invoice_number": "F2026-1128",
+    "invoice_date": "08/09/2026",
+    "due_date": "23/09/2026",
+    "currency": "€",
+    "subtotal": "9 534,64 €",
+    "tax_rate": "TVA 10 %",
+    "tax_amount": "953,46 €",
+    "total": "10 488,10 €",
+    "line_items": [
+      {
+        "description": "Cartouche toner noir",
+        "quantity": "8",
+        "unit_price": "87,13 €",
+        "amount": "697,04 €"
+      },
+      {
+        "description": "Prestation de maintenance",
+        "quantity": "10",
+        "unit_price": "106,16 €",
+        "amount": "1 061,60 €"
+      },
+      {
+        "description": "Transport palette Lyon-Paris",
+        "quantity": "50",
+        "unit_price": "155,52 €",
+        "amount": "7 776,00 €"
+      }
+    ]
+  }
+}

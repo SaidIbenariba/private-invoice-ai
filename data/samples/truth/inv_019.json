@@ -1,0 +1,33 @@
+{
+  "doc_id": "inv_019",
+  "file": "inv_019.pdf",
+  "layout": "uk",
+  "photo": false,
+  "anomaly": "tax_mismatch",
+  "invoice": {
+    "supplier_name": "Pennine Print & Pack Ltd",
+    "supplier_tax_id": "GB306261169",
+    "invoice_number": "TV1134",
+    "invoice_date": "2026-09-05",
+    "due_date": "2026-09-20",
+    "currency": "GBP",
+    "subtotal": 424.88,
+    "tax_rate": 20.0,
+    "tax_amount": 76.48,
+    "total": 501.36,
+    "line_items": [
+      {
+        "description": "Courier fuel surcharge",
+        "quantity": 2.0,
+        "unit_price": 6.04,
+        "amount": 12.08
+      },
+      {
+        "description": "Design hours",
+        "quantity": 8.0,
+        "unit_price": 51.6,
+        "amount": 412.8
+      }
+    ]
+  }
+}

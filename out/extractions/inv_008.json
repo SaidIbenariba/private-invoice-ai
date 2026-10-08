@@ -1,0 +1,31 @@
+{
+  "file": "inv_008.jpg",
+  "route": "vision",
+  "seconds": 98.3,
+  "raw": {
+    "supplier_name": "BUREAUTIQUE RABAT SARL",
+    "supplier_tax_id": "455853043520561",
+    "invoice_number": "2026/1059",
+    "invoice_date": "16.09.2026",
+    "due_date": "16.10.2026",
+    "currency": "DH",
+    "subtotal": "1 953,92 DH",
+    "tax_rate": "TVA 10%",
+    "tax_amount": "195,39 DH",
+    "total": "2 149,31 DH",
+    "line_items": [
+      {
+        "description": "Main d'oeuvre (heure)",
+        "quantity": "12",
+        "unit_price": "148,42",
+        "amount": "1 781,04"
+      },
+      {
+        "description": "Emballage carton",
+        "quantity": "8",
+        "unit_price": "21,61",
+        "amount": "172,88"
+      }
+    ]
+  }
+}

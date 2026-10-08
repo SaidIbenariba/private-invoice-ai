@@ -1,0 +1,49 @@
+{
+  "file": "inv_017.pdf",
+  "route": "text",
+  "seconds": 48.6,
+  "raw": {
+    "supplier_name": "Keystone Packaging Co.",
+    "supplier_tax_id": "19-0431634",
+    "invoice_number": "INV-1124",
+    "invoice_date": "Oct 4, 2026",
+    "due_date": "Oct 19, 2026",
+    "currency": "$",
+    "subtotal": "$1,991.92",
+    "tax_rate": "Sales Tax (8.25%)",
+    "tax_amount": "$164.33",
+    "total": "$2,156.25",
+    "line_items": [
+      {
+        "description": "Shipping labels, 1000 pack",
+        "quantity": "12",
+        "unit_price": "$24.08",
+        "amount": "$288.96"
+      },
+      {
+        "description": "Corrugated boxes 24x18x12",
+        "quantity": "1",
+        "unit_price": "$3.07",
+        "amount": "$3.07"
+      },
+      {
+        "description": "Stretch wrap roll 18in",
+        "quantity": "2",
+        "unit_price": "$31.52",
+        "amount": "$63.04"
+      },
+      {
+        "description": "Freight handling, pallet",
+        "quantity": "10",
+        "unit_price": "$69.61",
+        "amount": "$696.10"
+      },
+      {
+        "description": "Warehouse labor (hour)",
+        "quantity": "25",
+        "unit_price": "$37.63",
+        "amount": "$940.75"
+      }
+    ]
+  }
+}

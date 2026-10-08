@@ -1,0 +1,39 @@
+{
+  "doc_id": "inv_004",
+  "file": "inv_004.pdf",
+  "layout": "ma",
+  "photo": false,
+  "anomaly": null,
+  "invoice": {
+    "supplier_name": "Bureautique Rabat SARL",
+    "supplier_tax_id": "516761222029729",
+    "invoice_number": "2026/1034",
+    "invoice_date": "2026-09-15",
+    "due_date": "2026-10-30",
+    "currency": "MAD",
+    "subtotal": 2090.76,
+    "tax_rate": 10.0,
+    "tax_amount": 209.08,
+    "total": 2299.84,
+    "line_items": [
+      {
+        "description": "Rame papier A4",
+        "quantity": 4.0,
+        "unit_price": 41.4,
+        "amount": 165.6
+      },
+      {
+        "description": "Main d'oeuvre (heure)",
+        "quantity": 10.0,
+        "unit_price": 114.89,
+        "amount": 1148.9
+      },
+      {
+        "description": "Toner imprimante",
+        "quantity": 1.0,
+        "unit_price": 776.26,
+        "amount": 776.26
+      }
+    ]
+  }
+}

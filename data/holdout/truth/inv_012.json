@@ -1,0 +1,33 @@
+{
+  "doc_id": "inv_012",
+  "file": "inv_012.pdf",
+  "layout": "ma",
+  "photo": false,
+  "anomaly": null,
+  "invoice": {
+    "supplier_name": "Atlas Transport SARL",
+    "supplier_tax_id": "159450283166323",
+    "invoice_number": "2026/1085",
+    "invoice_date": "2026-09-10",
+    "due_date": "2026-09-25",
+    "currency": "MAD",
+    "subtotal": 8188.98,
+    "tax_rate": 7.0,
+    "tax_amount": 573.23,
+    "total": 8762.21,
+    "line_items": [
+      {
+        "description": "Transport marchandises Casa-Rabat",
+        "quantity": 5.0,
+        "unit_price": 1355.73,
+        "amount": 6778.65
+      },
+      {
+        "description": "Toner imprimante",
+        "quantity": 3.0,
+        "unit_price": 470.11,
+        "amount": 1410.33
+      }
+    ]
+  }
+}

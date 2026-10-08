@@ -1,0 +1,33 @@
+{
+  "doc_id": "inv_008",
+  "file": "inv_008.jpg",
+  "layout": "ma",
+  "photo": true,
+  "anomaly": null,
+  "invoice": {
+    "supplier_name": "Bureautique Rabat SARL",
+    "supplier_tax_id": "455853043520561",
+    "invoice_number": "2026/1059",
+    "invoice_date": "2026-09-16",
+    "due_date": "2026-10-16",
+    "currency": "MAD",
+    "subtotal": 1953.92,
+    "tax_rate": 10.0,
+    "tax_amount": 195.39,
+    "total": 2149.31,
+    "line_items": [
+      {
+        "description": "Main d'oeuvre (heure)",
+        "quantity": 12.0,
+        "unit_price": 148.42,
+        "amount": 1781.04
+      },
+      {
+        "description": "Emballage carton",
+        "quantity": 8.0,
+        "unit_price": 21.61,
+        "amount": 172.88
+      }
+    ]
+  }
+}

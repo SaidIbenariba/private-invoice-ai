@@ -1,0 +1,33 @@
+{
+  "doc_id": "inv_016",
+  "file": "inv_016.pdf",
+  "layout": "ma",
+  "photo": false,
+  "anomaly": null,
+  "invoice": {
+    "supplier_name": "Bureautique Rabat SARL",
+    "supplier_tax_id": "526114913167723",
+    "invoice_number": "2026/1113",
+    "invoice_date": "2026-09-18",
+    "due_date": "2026-10-18",
+    "currency": "MAD",
+    "subtotal": 2032.52,
+    "tax_rate": 10.0,
+    "tax_amount": 203.25,
+    "total": 2235.77,
+    "line_items": [
+      {
+        "description": "Emballage carton",
+        "quantity": 1.0,
+        "unit_price": 19.74,
+        "amount": 19.74
+      },
+      {
+        "description": "Transport marchandises Casa-Rabat",
+        "quantity": 2.0,
+        "unit_price": 1006.39,
+        "amount": 2012.78
+      }
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "doc_id": "inv_004",
+  "file": "inv_004.jpg",
+  "layout": "uk",
+  "photo": true,
+  "anomaly": "duplicate",
+  "invoice": {
+    "supplier_name": "Pennine Print & Pack Ltd",
+    "supplier_tax_id": "GB177992298",
+    "invoice_number": "TV1027",
+    "invoice_date": "2026-10-04",
+    "due_date": "2026-10-19",
+    "currency": "GBP",
+    "subtotal": 1279.11,
+    "tax_rate": 10.0,
+    "tax_amount": 127.91,
+    "total": 1407.02,
+    "line_items": [
+      {
+        "description": "Rame papier A4",
+        "quantity": 5.0,
+        "unit_price": 45.23,
+        "amount": 226.15
+      },
+      {
+        "description": "Emballage carton",
+        "quantity": 8.0,
+        "unit_price": 20.28,
+        "amount": 162.24
+      },
+      {
+        "description": "Main d'oeuvre (heure)",
+        "quantity": 8.0,
+        "unit_price": 111.34,
+        "amount": 890.72
+      }
+    ]
+  }
+}

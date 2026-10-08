@@ -1,0 +1,31 @@
+{
+  "file": "inv_016.pdf",
+  "route": "text",
+  "seconds": 35.0,
+  "raw": {
+    "supplier_name": "BUREAUTIQUE RABAT SARL",
+    "supplier_tax_id": "232838564271051",
+    "invoice_number": "2026/1117",
+    "invoice_date": "04.09.2026",
+    "due_date": "04.10.2026",
+    "currency": "DH",
+    "subtotal": "5 773,95 DH",
+    "tax_rate": "TVA 20%",
+    "tax_amount": "1 154,79 DH",
+    "total": "6 928,74 DH",
+    "line_items": [
+      {
+        "description": "Rame papier A4",
+        "quantity": "5",
+        "unit_price": "41,48",
+        "amount": "207,40"
+      },
+      {
+        "description": "Transport marchandises Casa-Rabat",
+        "quantity": "5",
+        "unit_price": "1 113,31",
+        "amount": "5 566,55"
+      }
+    ]
+  }
+}

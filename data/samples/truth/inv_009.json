@@ -1,0 +1,33 @@
+{
+  "doc_id": "inv_009",
+  "file": "inv_009.pdf",
+  "layout": "us",
+  "photo": false,
+  "anomaly": "total_mismatch",
+  "invoice": {
+    "supplier_name": "Brightline Logistics LLC",
+    "supplier_tax_id": "57-2492086",
+    "invoice_number": "INV-1064",
+    "invoice_date": "2026-09-10",
+    "due_date": "2026-10-10",
+    "currency": "USD",
+    "subtotal": 374.45,
+    "tax_rate": 0.0,
+    "tax_amount": 0.0,
+    "total": 464.45,
+    "line_items": [
+      {
+        "description": "Printer paper, case",
+        "quantity": 5.0,
+        "unit_price": 43.17,
+        "amount": 215.85
+      },
+      {
+        "description": "Freight handling, pallet",
+        "quantity": 4.0,
+        "unit_price": 39.65,
+        "amount": 158.6
+      }
+    ]
+  }
+}

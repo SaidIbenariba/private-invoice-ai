@@ -1,0 +1,49 @@
+{
+  "file": "inv_024.jpg",
+  "route": "vision",
+  "seconds": 66.3,
+  "raw": {
+    "supplier_name": "BUREAUTIQUE RABAT SARL",
+    "supplier_tax_id": "200020101953816",
+    "invoice_number": "FACTURE N° 2026/1168",
+    "invoice_date": "04.09.2026",
+    "due_date": "04.10.2026",
+    "currency": "DH",
+    "subtotal": "10 160,82 DH",
+    "tax_rate": "TVA 10%",
+    "tax_amount": "1 016,08 DH",
+    "total": "11 176,90 DH",
+    "line_items": [
+      {
+        "description": "Emballage carton",
+        "quantity": "12",
+        "unit_price": "9,20",
+        "amount": "110,40"
+      },
+      {
+        "description": "Toner imprimante",
+        "quantity": "5",
+        "unit_price": "745,69",
+        "amount": "3 728,45"
+      },
+      {
+        "description": "Rame papier A4",
+        "quantity": "50",
+        "unit_price": "41,45",
+        "amount": "2 072,50"
+      },
+      {
+        "description": "Transport marchandises Casa-Rabat",
+        "quantity": "3",
+        "unit_price": "1 209,61",
+        "amount": "3 628,83"
+      },
+      {
+        "description": "Main d'oeuvre (heure)",
+        "quantity": "6",
+        "unit_price": "103,44",
+        "amount": "620,64"
+      }
+    ]
+  }
+}

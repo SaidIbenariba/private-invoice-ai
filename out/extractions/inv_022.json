@@ -1,0 +1,43 @@
+{
+  "file": "inv_022.jpg",
+  "route": "vision",
+  "seconds": 62.5,
+  "raw": {
+    "supplier_name": "Atelier Durand SARL",
+    "supplier_tax_id": "FR44950032496",
+    "invoice_number": "F2026-1155",
+    "invoice_date": "04/10/2026",
+    "due_date": "19/10/2026",
+    "currency": "€",
+    "subtotal": "1 860,84 €",
+    "tax_rate": "TVA 10 %",
+    "tax_amount": "186,08 €",
+    "total": "2 046,92 €",
+    "line_items": [
+      {
+        "description": "Prestation de maintenance",
+        "quantity": "12",
+        "unit_price": "97,79 €",
+        "amount": "1 173,48 €"
+      },
+      {
+        "description": "Carton double cannelure",
+        "quantity": "8",
+        "unit_price": "2,43 €",
+        "amount": "19,44 €"
+      },
+      {
+        "description": "Transport palette Lyon-Paris",
+        "quantity": "6",
+        "unit_price": "104,86 €",
+        "amount": "629,16 €"
+      },
+      {
+        "description": "Ramette papier A4 80g",
+        "quantity": "6",
+        "unit_price": "6,46 €",
+        "amount": "38,76 €"
+      }
+    ]
+  }
+}

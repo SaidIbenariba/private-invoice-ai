@@ -1,0 +1,39 @@
+{
+  "doc_id": "inv_006",
+  "file": "inv_006.jpg",
+  "layout": "fr",
+  "photo": true,
+  "anomaly": null,
+  "invoice": {
+    "supplier_name": "Atelier Durand SARL",
+    "supplier_tax_id": "FR13613412524",
+    "invoice_number": "F2026-1047",
+    "invoice_date": "2026-09-29",
+    "due_date": "2026-10-29",
+    "currency": "EUR",
+    "subtotal": 1587.26,
+    "tax_rate": 10.0,
+    "tax_amount": 158.73,
+    "total": 1745.99,
+    "line_items": [
+      {
+        "description": "Heure de manutention",
+        "quantity": 12.0,
+        "unit_price": 40.53,
+        "amount": 486.36
+      },
+      {
+        "description": "Cartouche toner noir",
+        "quantity": 10.0,
+        "unit_price": 69.31,
+        "amount": 693.1
+      },
+      {
+        "description": "Prestation de maintenance",
+        "quantity": 4.0,
+        "unit_price": 101.95,
+        "amount": 407.8
+      }
+    ]
+  }
+}

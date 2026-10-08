@@ -1,0 +1,39 @@
+{
+  "doc_id": "inv_011",
+  "file": "inv_011.pdf",
+  "layout": "uk",
+  "photo": false,
+  "anomaly": null,
+  "invoice": {
+    "supplier_name": "Pennine Print & Pack Ltd",
+    "supplier_tax_id": "GB410423468",
+    "invoice_number": "TV1082",
+    "invoice_date": "2026-09-26",
+    "due_date": "2026-10-11",
+    "currency": "GBP",
+    "subtotal": 652.68,
+    "tax_rate": 20.0,
+    "tax_amount": 130.54,
+    "total": 783.22,
+    "line_items": [
+      {
+        "description": "Same-day courier, zone 2",
+        "quantity": 10.0,
+        "unit_price": 32.54,
+        "amount": 325.4
+      },
+      {
+        "description": "Courier fuel surcharge",
+        "quantity": 50.0,
+        "unit_price": 4.7,
+        "amount": 235.0
+      },
+      {
+        "description": "Mailing bags, large (100)",
+        "quantity": 6.0,
+        "unit_price": 15.38,
+        "amount": 92.28
+      }
+    ]
+  }
+}

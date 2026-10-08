@@ -1,0 +1,31 @@
+{
+  "file": "inv_005.pdf",
+  "route": "text",
+  "seconds": 27.1,
+  "raw": {
+    "supplier_name": "Northwind Office Supply Inc.",
+    "supplier_tax_id": "24-4106460",
+    "invoice_number": "INV-1040",
+    "invoice_date": "Sep 12, 2026",
+    "due_date": "Oct 27, 2026",
+    "currency": "$",
+    "subtotal": "$234.14",
+    "tax_rate": "Sales Tax (8.25%)",
+    "tax_amount": "$19.32",
+    "total": "$253.46",
+    "line_items": [
+      {
+        "description": "Warehouse labor (hour)",
+        "quantity": "5",
+        "unit_price": "$38.00",
+        "amount": "$190.00"
+      },
+      {
+        "description": "Stretch wrap roll 18in",
+        "quantity": "2",
+        "unit_price": "$22.07",
+        "amount": "$44.14"
+      }
+    ]
+  }
+}

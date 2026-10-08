@@ -1,0 +1,31 @@
+{
+  "file": "inv_015.pdf",
+  "route": "text",
+  "seconds": 28.3,
+  "raw": {
+    "supplier_name": "Thames Valley Couriers Ltd",
+    "supplier_tax_id": "GB603304284",
+    "invoice_number": "TV1111",
+    "invoice_date": "25 September 2026",
+    "due_date": "9 November 2026",
+    "currency": "£",
+    "subtotal": "£193.95",
+    "tax_rate": "VAT @ 20%",
+    "tax_amount": "£38.79",
+    "total": "£232.74",
+    "line_items": [
+      {
+        "description": "Design hours",
+        "quantity": "3",
+        "unit_price": "£42.37",
+        "amount": "£127.11"
+      },
+      {
+        "description": "Courier fuel surcharge",
+        "quantity": "12",
+        "unit_price": "£5.57",
+        "amount": "£66.84"
+      }
+    ]
+  }
+}

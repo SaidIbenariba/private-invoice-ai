@@ -1,0 +1,51 @@
+{
+  "doc_id": "inv_003",
+  "file": "inv_003.pdf",
+  "layout": "uk",
+  "photo": false,
+  "anomaly": null,
+  "invoice": {
+    "supplier_name": "Thames Valley Couriers Ltd",
+    "supplier_tax_id": "GB741215472",
+    "invoice_number": "TV1023",
+    "invoice_date": "2026-09-30",
+    "due_date": "2026-11-14",
+    "currency": "GBP",
+    "subtotal": 590.76,
+    "tax_rate": 20.0,
+    "tax_amount": 118.15,
+    "total": 708.91,
+    "line_items": [
+      {
+        "description": "Courier fuel surcharge",
+        "quantity": 25.0,
+        "unit_price": 6.0,
+        "amount": 150.0
+      },
+      {
+        "description": "Design hours",
+        "quantity": 4.0,
+        "unit_price": 36.68,
+        "amount": 146.72
+      },
+      {
+        "description": "Printed flyers A5 (500)",
+        "quantity": 4.0,
+        "unit_price": 54.86,
+        "amount": 219.44
+      },
+      {
+        "description": "Same-day courier, zone 2",
+        "quantity": 2.0,
+        "unit_price": 30.84,
+        "amount": 61.68
+      },
+      {
+        "description": "Mailing bags, large (100)",
+        "quantity": 1.0,
+        "unit_price": 12.92,
+        "amount": 12.92
+      }
+    ]
+  }
+}

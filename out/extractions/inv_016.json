@@ -1,0 +1,31 @@
+{
+  "file": "inv_016.pdf",
+  "route": "text",
+  "seconds": 25.4,
+  "raw": {
+    "supplier_name": "BUREAUTIQUE RABAT SARL",
+    "supplier_tax_id": "526114913167723",
+    "invoice_number": "2026/1113",
+    "invoice_date": "18.09.2026",
+    "due_date": "18.10.2026",
+    "currency": "DH",
+    "subtotal": "2 032,52 DH",
+    "tax_rate": "TVA 10%",
+    "tax_amount": "203,25 DH",
+    "total": "2 235,77 DH",
+    "line_items": [
+      {
+        "description": "Emballage carton",
+        "quantity": "1",
+        "unit_price": "19,74",
+        "amount": "19,74"
+      },
+      {
+        "description": "Transport marchandises Casa-Rabat",
+        "quantity": "2",
+        "unit_price": "1 006,39",
+        "amount": "2 012,78"
+      }
+    ]
+  }
+}

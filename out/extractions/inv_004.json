@@ -1,0 +1,37 @@
+{
+  "file": "inv_004.pdf",
+  "route": "text",
+  "seconds": 58.6,
+  "raw": {
+    "supplier_name": "BUREAUTIQUE RABAT SARL",
+    "supplier_tax_id": "516761222029729",
+    "invoice_number": "2026/1034",
+    "invoice_date": "15.09.2026",
+    "due_date": "30.10.2026",
+    "currency": "DH",
+    "subtotal": "2 090,76 DH",
+    "tax_rate": "TVA 10%",
+    "tax_amount": "209,08 DH",
+    "total": "2 299,84 DH",
+    "line_items": [
+      {
+        "description": "Rame papier A4",
+        "quantity": "4",
+        "unit_price": "41,40",
+        "amount": "165,60"
+      },
+      {
+        "description": "Main d'oeuvre (heure)",
+        "quantity": "10",
+        "unit_price": "114,89",
+        "amount": "1 148,90"
+      },
+      {
+        "description": "Toner imprimante",
+        "quantity": "1",
+        "unit_price": "776,26",
+        "amount": "776,26"
+      }
+    ]
+  }
+}
