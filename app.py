@@ -35,7 +35,7 @@ with st.sidebar:
     if source == "Upload my own":
         uploads = st.file_uploader("PDF, JPG or PNG", type=["pdf", "jpg", "jpeg", "png"], accept_multiple_files=True)
     model = st.text_input("Local model", DEFAULT_MODEL)
-    go = st.button("Process", type="primary", use_container_width=True)
+    go = st.button("Process", type="primary", width="stretch")
     st.divider()
     st.markdown("**Checks applied**\n- required fields\n- qty x price = line amount\n- lines sum = subtotal\n"
                 "- tax = subtotal x rate\n- subtotal + tax = total\n- allowed tax rates\n- due date after invoice date\n"
@@ -89,11 +89,11 @@ def color_status(v):
 
 
 st.dataframe(table.style.map(color_status, subset=["Status"]).format({"Total": "{:,.2f}"}),
-             use_container_width=True, hide_index=True, height=300)
+             width="stretch", hide_index=True, height=300)
 
 xlsx = out_dir / "invoices.xlsx"
 if xlsx.exists():
-    st.download_button("Download Excel", xlsx.read_bytes(), "invoices.xlsx", use_container_width=False)
+    st.download_button("Download Excel", xlsx.read_bytes(), "invoices.xlsx", width="content")
 
 st.divider()
 st.subheader("Review")
@@ -106,7 +106,7 @@ inv = doc["invoice"]
 left, right = st.columns([1, 1])
 with left:
     img, _ = load_page(in_dir / doc["file"])
-    st.image(img, use_container_width=True)
+    st.image(img, width="stretch")
 with right:
     cls = "ok" if doc["status"] == "APPROVED" else "flag"
     st.markdown(f'<span class="pill {cls}">{doc["status"]}</span> &nbsp; read via **{doc["route"]}** path '
@@ -115,12 +115,12 @@ with right:
         st.markdown(f'<div class="issue">{i["message"]}</div>', unsafe_allow_html=True)
     fields = pd.DataFrame(
         [(k_, v) for k_, v in inv.items() if k_ != "line_items"], columns=["Field", "Value"]).astype({"Value": str})
-    st.data_editor(fields, hide_index=True, use_container_width=True, disabled=["Field"], key=f"f_{pick}")
-    st.data_editor(pd.DataFrame(inv["line_items"]), hide_index=True, use_container_width=True, key=f"l_{pick}")
+    st.data_editor(fields, hide_index=True, width="stretch", disabled=["Field"], key=f"f_{pick}")
+    st.data_editor(pd.DataFrame(inv["line_items"]), hide_index=True, width="stretch", key=f"l_{pick}")
     c1, c2 = st.columns(2)
-    if c1.button("Confirm", type="primary", use_container_width=True, key=f"ok_{pick}"):
+    if c1.button("Confirm", type="primary", width="stretch", key=f"ok_{pick}"):
         st.success("Confirmed. In production this writes to your database or ERP.")
-    c2.button("Reject", use_container_width=True, key=f"no_{pick}")
+    c2.button("Reject", width="stretch", key=f"no_{pick}")
     if "wrong_fields" in doc:
         wrong = doc["wrong_fields"]
         st.caption("Ground truth check: " + ("all fields correct" if not wrong else "wrong: " + ", ".join(wrong))
