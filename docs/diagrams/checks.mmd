@@ -1,0 +1,36 @@
+%%{init: {"flowchart": {"rankSpacing": 18, "nodeSpacing": 30}}}%%
+flowchart TB
+    INV["Normalized
+    invoice"] --> MATH & FIELDS & BATCH
+
+    subgraph MATH ["Arithmetic"]
+        direction TB
+        L["qty × price
+        = line amount"]
+        S["lines sum
+        = subtotal"]
+        TX["subtotal × rate
+        = tax"]
+        TT["subtotal + tax
+        = total"]
+        L ~~~ S ~~~ TX ~~~ TT
+    end
+
+    subgraph FIELDS ["Rules"]
+        direction TB
+        F["required
+        fields present"]
+        RT["tax rate
+        allowed"]
+        D["due date after
+        invoice date"]
+        ID["supplier tax ID
+        VAT / ICE"]
+        F ~~~ RT ~~~ D ~~~ ID
+    end
+
+    subgraph BATCH ["Batch"]
+        direction TB
+        DUP["no duplicate
+        invoice"]
+    end

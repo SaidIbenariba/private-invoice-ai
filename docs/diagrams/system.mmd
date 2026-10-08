@@ -1,0 +1,34 @@
+flowchart TB
+    subgraph LOCAL ["Runs locally, no cloud API"]
+        IN["Invoice
+        PDF, scan or phone photo"] --> R{"Text layer?"}
+        R -- "yes: digital PDF" --> T["Text path
+        layout kept"]
+        R -- "no: scan or photo" --> V["Vision path
+        page image"]
+        T --> M["Local model
+        qwen2.5vl on Ollama
+        copies raw text only"]
+        V --> M
+        M --> N["Normalize, tested code
+        numbers, dates,
+        currency, tax IDs"]
+        N --> C["9 business checks"]
+    end
+
+    C -- "all pass" --> A(["APPROVED"])
+    C -- "any fails" --> RV(["REVIEW
+    with reason"])
+    A --> X["Excel workbook
+    invoices, line items,
+    review queue, accuracy"]
+    RV --> X
+    RV --> S["Review screen
+    Streamlit"]
+
+    classDef ok fill:#e6f4ea,stroke:#2e9150,color:#17703a
+    classDef bad fill:#fdecea,stroke:#d93025,color:#b42318
+    classDef model fill:#eef3fb,stroke:#6f8fcf,color:#1f2937
+    class A ok
+    class RV bad
+    class M model

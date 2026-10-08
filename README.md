@@ -4,46 +4,12 @@ Invoices, scans and phone photos turned into validated data, **running 100% loca
 
 The model reads. Code checks. A person decides on anything uncertain.
 
-```mermaid
-%%{init: {"flowchart": {"htmlLabels": false, "padding": 14}}}%%
-flowchart LR
-    IN["Invoice
-    PDF, scan
-    or phone photo"] --> R{"Text
-    layer?"}
-
-    subgraph LOCAL ["Runs on your machine, no cloud API"]
-        R -- "yes: PDF" --> T["Text path
-        layout kept"]
-        R -- "no: photo" --> V["Vision path
-        page image"]
-        T --> M["Local model
-        qwen2.5vl
-        on Ollama"]
-        V --> M
-        M --> N["Normalize
-        numbers, dates,
-        currency, tax IDs"]
-        N --> C["9 business
-        checks"]
-    end
-
-    C -- "all pass" --> A(["APPROVED"])
-    C -- "any fails" --> RV(["REVIEW
-    + reason"])
-    A --> X["Excel
-    workbook"]
-    RV --> X
-    RV --> S["Review
-    screen"]
-
-    classDef ok fill:#e6f4ea,stroke:#2e9150,color:#17703a
-    classDef bad fill:#fdecea,stroke:#d93025,color:#b42318
-    classDef model fill:#eef3fb,stroke:#6f8fcf,color:#1f2937
-    class A ok
-    class RV bad
-    class M model
-```
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/diagrams/system-dark.png">
+  <img alt="How it works: invoice (PDF, scan or photo), text or vision path, local model, normalize, 9 business checks, then APPROVED to Excel or REVIEW to the review screen" src="docs/diagrams/system-light.png" width="473">
+</picture>
+</p>
 
 ## Results on the sample batch
 
@@ -76,44 +42,12 @@ How these numbers were made:
 
 ## Business checks
 
-```mermaid
-%%{init: {"flowchart": {"htmlLabels": false, "padding": 14}}}%%
-flowchart TB
-    INV["Normalized
-    invoice"] --> MATH & FIELDS & BATCH
-
-    subgraph MATH ["Arithmetic"]
-        direction TB
-        L["qty × price
-        = line amount"]
-        S["lines sum
-        = subtotal"]
-        TX["subtotal × rate
-        = tax"]
-        TT["subtotal + tax
-        = total"]
-        L ~~~ S ~~~ TX ~~~ TT
-    end
-
-    subgraph FIELDS ["Rules"]
-        direction TB
-        F["required
-        fields present"]
-        RT["tax rate
-        allowed"]
-        D["due date after
-        invoice date"]
-        ID["supplier tax ID
-        VAT / ICE"]
-        F ~~~ RT ~~~ D ~~~ ID
-    end
-
-    subgraph BATCH ["Batch"]
-        direction TB
-        DUP["no duplicate
-        invoice"]
-    end
-```
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/diagrams/checks-dark.png">
+  <img alt="The 9 checks: arithmetic (qty × price, lines sum, tax, total), rules (required fields, allowed tax rate, due date, supplier tax ID), batch (no duplicate)" src="docs/diagrams/checks-light.png" width="685">
+</picture>
+</p>
 
 | Check | Example flag |
 |---|---|
@@ -174,6 +108,7 @@ src/invoice_ai/
   pipeline.py    batch run with caching
   synth.py       synthetic invoices + ground truth
 app.py           Streamlit review screen
+docs/diagrams/   diagram sources (.mmd); re-render with: uv run python docs/diagrams/render.py
 ```
 
 ## Author
