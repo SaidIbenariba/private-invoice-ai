@@ -108,4 +108,4 @@ app.py           Streamlit review screen
 
 ## Author
 
-Said Ibenariba, data scientist and AI engineer. I took a vision-language invoice model to production at Orange Business (1,000+ carrier invoice formats, FastAPI + Docker, air-gapped). Available for document-processing projects on Upwork.
+Said Ibenariba, data scientist and AI engineer. I took a vision-language invoice model to production at Orange Business (1,000+ carrier invoice formats, FastAPI + Docker, air-gapped). Available for document-processing projects: [hire me on Upwork](https://www.upwork.com/freelancers/~01940599324880c3de).
