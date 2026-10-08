@@ -4,14 +4,31 @@ Invoices, scans and phone photos turned into validated data, **running 100% loca
 
 The model reads. Code checks. A person decides on anything uncertain.
 
-```
- PDF / scan / photo ──► route ──► local model (Ollama, qwen2.5vl) ──► normalize ──► 9 business checks ──► APPROVED
-                         │          copies raw text only                 tested code                       │
-                         │                                                                                 └► REVIEW + reason
-                         ├─ digital PDF: text layer path (layout preserved)
-                         └─ scan / photo: vision path
-                                                                   ──► Excel (summary, invoices, line items, review queue, accuracy)
-                                                                   ──► Streamlit review screen
+```mermaid
+flowchart LR
+    IN["Invoice<br/>PDF · scan · phone photo"] --> R{"Text layer?"}
+
+    subgraph LOCAL ["Runs on your machine: no cloud API"]
+        R -- "yes: digital PDF" --> T["Text path<br/>layout-preserved text"]
+        R -- "no: scan or photo" --> V["Vision path<br/>page image"]
+        T --> M["Local model<br/>qwen2.5vl on Ollama<br/>copies raw strings only"]
+        V --> M
+        M --> N["Normalize · tested code<br/>numbers · dates · currency · tax IDs"]
+        N --> C["9 business checks"]
+    end
+
+    C -- "all pass" --> A(["APPROVED"])
+    C -- "any fails" --> RV(["REVIEW + reason"])
+    A --> X["Excel workbook<br/>summary · invoices · line items<br/>review queue · accuracy"]
+    RV --> X
+    RV --> S["Streamlit review screen"]
+
+    classDef ok fill:#e6f4ea,stroke:#2e9150,color:#17703a
+    classDef bad fill:#fdecea,stroke:#d93025,color:#b42318
+    classDef model fill:#eef3fb,stroke:#6f8fcf
+    class A ok
+    class RV bad
+    class M model
 ```
 
 ## Results on the sample batch
@@ -44,6 +61,34 @@ How these numbers were made:
 - **Private by default.** Ollama on your own machine or server. Swap in vLLM or a cloud API with a no-training agreement if you prefer.
 
 ## Business checks
+
+```mermaid
+flowchart TB
+    INV["Normalized invoice"] --> MATH & FIELDS & BATCH
+
+    subgraph MATH ["Arithmetic"]
+        direction TB
+        L["qty × unit price = line amount"]
+        S["line amounts sum = subtotal"]
+        TX["subtotal × rate = tax"]
+        TT["subtotal + tax = total"]
+        L ~~~ S ~~~ TX ~~~ TT
+    end
+
+    subgraph FIELDS ["Fields and rules"]
+        direction TB
+        F["required fields present"]
+        RT["tax rate is an allowed rate"]
+        D["due date after invoice date"]
+        ID["supplier tax ID present · VAT / ICE"]
+        F ~~~ RT ~~~ D ~~~ ID
+    end
+
+    subgraph BATCH ["Batch"]
+        direction TB
+        DUP["not a duplicate invoice"]
+    end
+```
 
 | Check | Example flag |
 |---|---|
