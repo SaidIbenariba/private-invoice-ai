@@ -5,27 +5,41 @@ Invoices, scans and phone photos turned into validated data, **running 100% loca
 The model reads. Code checks. A person decides on anything uncertain.
 
 ```mermaid
+%%{init: {"flowchart": {"htmlLabels": false, "padding": 14}}}%%
 flowchart LR
-    IN["Invoice<br/>PDF · scan · phone photo"] --> R{"Text layer?"}
+    IN["Invoice
+    PDF, scan
+    or phone photo"] --> R{"Text
+    layer?"}
 
-    subgraph LOCAL ["Runs on your machine: no cloud API"]
-        R -- "yes: digital PDF" --> T["Text path<br/>layout-preserved text"]
-        R -- "no: scan or photo" --> V["Vision path<br/>page image"]
-        T --> M["Local model<br/>qwen2.5vl on Ollama<br/>copies raw strings only"]
+    subgraph LOCAL ["Runs on your machine, no cloud API"]
+        R -- "yes: PDF" --> T["Text path
+        layout kept"]
+        R -- "no: photo" --> V["Vision path
+        page image"]
+        T --> M["Local model
+        qwen2.5vl
+        on Ollama"]
         V --> M
-        M --> N["Normalize · tested code<br/>numbers · dates · currency · tax IDs"]
-        N --> C["9 business checks"]
+        M --> N["Normalize
+        numbers, dates,
+        currency, tax IDs"]
+        N --> C["9 business
+        checks"]
     end
 
     C -- "all pass" --> A(["APPROVED"])
-    C -- "any fails" --> RV(["REVIEW + reason"])
-    A --> X["Excel workbook<br/>summary · invoices · line items<br/>review queue · accuracy"]
+    C -- "any fails" --> RV(["REVIEW
+    + reason"])
+    A --> X["Excel
+    workbook"]
     RV --> X
-    RV --> S["Streamlit review screen"]
+    RV --> S["Review
+    screen"]
 
     classDef ok fill:#e6f4ea,stroke:#2e9150,color:#17703a
     classDef bad fill:#fdecea,stroke:#d93025,color:#b42318
-    classDef model fill:#eef3fb,stroke:#6f8fcf
+    classDef model fill:#eef3fb,stroke:#6f8fcf,color:#1f2937
     class A ok
     class RV bad
     class M model
@@ -63,30 +77,41 @@ How these numbers were made:
 ## Business checks
 
 ```mermaid
+%%{init: {"flowchart": {"htmlLabels": false, "padding": 14}}}%%
 flowchart TB
-    INV["Normalized invoice"] --> MATH & FIELDS & BATCH
+    INV["Normalized
+    invoice"] --> MATH & FIELDS & BATCH
 
     subgraph MATH ["Arithmetic"]
         direction TB
-        L["qty × unit price = line amount"]
-        S["line amounts sum = subtotal"]
-        TX["subtotal × rate = tax"]
-        TT["subtotal + tax = total"]
+        L["qty × price
+        = line amount"]
+        S["lines sum
+        = subtotal"]
+        TX["subtotal × rate
+        = tax"]
+        TT["subtotal + tax
+        = total"]
         L ~~~ S ~~~ TX ~~~ TT
     end
 
-    subgraph FIELDS ["Fields and rules"]
+    subgraph FIELDS ["Rules"]
         direction TB
-        F["required fields present"]
-        RT["tax rate is an allowed rate"]
-        D["due date after invoice date"]
-        ID["supplier tax ID present · VAT / ICE"]
+        F["required
+        fields present"]
+        RT["tax rate
+        allowed"]
+        D["due date after
+        invoice date"]
+        ID["supplier tax ID
+        VAT / ICE"]
         F ~~~ RT ~~~ D ~~~ ID
     end
 
     subgraph BATCH ["Batch"]
         direction TB
-        DUP["not a duplicate invoice"]
+        DUP["no duplicate
+        invoice"]
     end
 ```
 
